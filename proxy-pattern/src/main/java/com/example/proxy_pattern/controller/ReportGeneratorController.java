@@ -31,6 +31,7 @@ public class ReportGeneratorController {
 
     @PostMapping
     public ResponseEntity<Report> createReport() {
+        // Just example code, don't add business logic to your controller
         var createdReport = this.reportRepository.save(new Report());
         return ResponseEntity.status(201).body(createdReport);
     }
