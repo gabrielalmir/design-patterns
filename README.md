@@ -8,6 +8,10 @@ This repository contains examples of design pattern implementations in Java usin
     Example of applying the Proxy pattern for response caching in report generation.
     **Location:** `proxy-pattern/`
 
+- **Singleton**
+    Example of a logger using Singleton and risks involved when used in multithreaded environments and can complicate unit testing.
+    **Location:** `singleton-pattern/`
+
 ## Technologies
 
 - Java 21
