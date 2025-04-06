@@ -1,43 +1,43 @@
 # Design Patterns
 
-Este repositório contém exemplos de implementação de padrões de projeto em Java utilizando Spring Boot e Maven.
+This repository contains examples of design pattern implementations in Java using Spring Boot and Maven.
 
-## Projetos
+## Projects
 
 - **Proxy Pattern**
-  Exemplo da aplicação do padrão Proxy para cache de respostas na geração de relatórios.
-  **Localização:** `proxy-pattern/`
+    Example of applying the Proxy pattern for response caching in report generation.
+    **Location:** `proxy-pattern/`
 
-## Tecnologias
+## Technologies
 
 - Java 21
 - Spring Boot 3.4.4
-- Maven (com Maven Wrapper)
-- H2 Database (runtime para testes)
+- Maven (with Maven Wrapper)
+- H2 Database (runtime for tests)
 
-## Estrutura do Repositório
+## Repository Structure
 
 - `proxy-pattern/`
-  - `src/main/java`: Código fonte Java
-  - `src/main/resources`: Arquivos de configuração
-  - `src/test/java`: Testes unitários
-- Outros arquivos e diretórios correspondentes à configuração do Maven e ferramentas de build
+    - `src/main/java`: Java source code
+    - `src/main/resources`: Configuration files
+    - `src/test/java`: Unit tests
+- Other files and directories related to Maven configuration and build tools
 
-## Como Executar o Projeto
+## How to Run the Project
 
-1. Navegue até o diretório do projeto desejado, por exemplo:
-   ```
-   cd proxy-pattern
-   ```
-2. Execute a aplicação via Maven Wrapper:
-   ```
-   ./mvnw spring-boot:run
-   ```
+1. Navigate to the desired project directory, for example:
+     ```bash
+     cd proxy-pattern
+     ```
+2. Run the application using Maven Wrapper:
+     ```bash
+     ./mvnw spring-boot:run
+     ```
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Por favor, abra issues ou pull requests para sugestões e melhorias.
+Contributions are welcome! Please open issues or pull requests for suggestions and improvements.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [Licença Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+This project is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
