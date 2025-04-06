@@ -12,25 +12,6 @@ This repository contains examples of design pattern implementations.
     Example of a logger using Singleton and risks involved when used in multithreaded environments and can complicate unit testing.
     **Location:** `singleton-pattern/`
 
-## Repository Structure
-
-- `proxy-pattern/`
-    - `src/main/java`: Java source code
-    - `src/main/resources`: Configuration files
-    - `src/test/java`: Unit tests
-- Other files and directories related to Maven configuration and build tools
-
-## How to Run the Project
-
-1. Navigate to the desired project directory, for example:
-     ```bash
-     cd proxy-pattern
-     ```
-2. Run the application using Maven Wrapper:
-     ```bash
-     ./mvnw spring-boot:run
-     ```
-
 ## Contribution
 
 Contributions are welcome! Please open issues or pull requests for suggestions and improvements.
