@@ -23,8 +23,8 @@ public class ReportGeneratorProxy implements ReportGeneratorInterface {
         if (cache.containsKey(report.getId())) {
             var entry = cache.get(report.getId());
 
-            if (System.currentTimeMillis() - entry.timestamp < CACHE_LIFETIME) {
-                return entry.response;
+            if (System.currentTimeMillis() - entry.getTimestamp() < CACHE_LIFETIME) {
+                return entry.getResponse();
             }
 
             cache.remove(report.getId());
@@ -35,15 +35,4 @@ public class ReportGeneratorProxy implements ReportGeneratorInterface {
 
         return reportData;
     }
-
-    private static class CacheEntry {
-        private final ReportGeneratedResponseDto response;
-        private final long timestamp;
-
-        public CacheEntry(ReportGeneratedResponseDto response, long timestamp) {
-            this.response = response;
-            this.timestamp = timestamp;
-        }
-    }
-
 }
