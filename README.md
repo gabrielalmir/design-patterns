@@ -1,6 +1,6 @@
 # Design Patterns
 
-This repository contains examples of design pattern implementations in Java using Spring Boot and Maven.
+This repository contains examples of design pattern implementations.
 
 ## Projects
 
@@ -11,13 +11,6 @@ This repository contains examples of design pattern implementations in Java usin
 - **Singleton**
     Example of a logger using Singleton and risks involved when used in multithreaded environments and can complicate unit testing.
     **Location:** `singleton-pattern/`
-
-## Technologies
-
-- Java 21
-- Spring Boot 3.4.4
-- Maven (with Maven Wrapper)
-- H2 Database (runtime for tests)
 
 ## Repository Structure
 
