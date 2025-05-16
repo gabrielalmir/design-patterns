@@ -10,7 +10,34 @@ The Proxy acts as a "gatekeeper" or intermediary between the client and the real
 
 Imagine you have a report generation class with high complexity, and you want to cache this information for 5 minutes. Instead of implementing this logic in the Controller (which would violate several software design principles), you could use the Proxy pattern to act as an intermediary between the caching logic and the business rules.
 
-In the diagram below, the `ReportGeneratorProxy` uses a cache to store reports for 5 minutes. If the report is in the cache, it delivers it directly; otherwise, it calls the service, stores the result in the cache, and then returns it.
+In this example, the `ReportGeneratorProxy` uses a cache to store reports for 5 minutes. If the report is in the cache, it delivers it directly; otherwise, it calls the service, stores the result in the cache, and then returns it.
+
+### Implementation Details
+
+This example is implemented in TypeScript with Node.js and Express:
+
+- `ReportGeneratorInterface`: Defines the contract for report generation
+- `ReportGeneratorService`: Implements the actual report generation (simulated with a 5-second delay)
+- `ReportGeneratorProxy`: Implements the same interface but adds caching functionality
+- `CacheEntry`: Stores a report response with a timestamp for cache invalidation
+- `ReportRepository`: Manages report storage and retrieval
+- `ReportGeneratorController`: Handles HTTP requests for report operations
+
+### Running the Example
+
+1. Install dependencies:
+   ```
+   npm install
+   ```
+
+2. Start the server:
+   ```
+   npm run dev
+   ```
+
+3. Use the API:
+   - Create a report: `POST /reports`
+   - Generate a report: `GET /reports/:id/generate`
 
 ### Key Benefits
 
